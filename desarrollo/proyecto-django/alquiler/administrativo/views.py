@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.contrib.auth.models import User, Group
 from rest_framework import viewsets
 from rest_framework import permissions
+from administrativo.models import Edificio, Departamento
 from administrativo.serializers import UserSerializer, GroupSerializer, \
     EdificioSerializer, DepartamentoSerializer
 

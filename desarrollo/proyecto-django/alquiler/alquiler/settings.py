@@ -136,9 +136,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # LOGOUT_REDIRECT_URL = '/' # new
 
-# agregar apps para Auth - paso 4
-LOGIN_REDIRECT_URL = reverse_lazy('index')
-
 # agregar información para
 REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
