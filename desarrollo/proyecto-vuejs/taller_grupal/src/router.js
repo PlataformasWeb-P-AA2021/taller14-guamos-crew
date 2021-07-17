@@ -24,5 +24,20 @@ export default new Router({
       name: "index",
       component: () => import("./components/Index.vue")
     },
+    {
+      path: "/createdept",
+      name: "createdept",
+      component: () => import("./components/CreateDepartamento.vue")
+    },
+    {
+      path: "/listdept",
+      name: "listdept",
+      component: () => import("./components/DepartamentoList.vue")
+    },
+    {
+      path: "/edit_departamento",
+      name: "edit_departamento",
+      component: () => import("./components/EditDepartamento.vue")
+    },
   ]
 });
