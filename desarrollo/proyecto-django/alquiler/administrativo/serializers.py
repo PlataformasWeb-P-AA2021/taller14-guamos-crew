@@ -24,6 +24,7 @@ class EdificioSerializer(serializers.HyperlinkedModelSerializer):
 
 
 class DepartamentoSerializer(serializers.HyperlinkedModelSerializer):
+    id = serializers.IntegerField(read_only=True)
     class Meta:
         model = Departamento
         # fields = ['id', 'telefono', 'tipo']
