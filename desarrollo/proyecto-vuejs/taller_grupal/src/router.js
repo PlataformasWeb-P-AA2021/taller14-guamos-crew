@@ -35,7 +35,7 @@ export default new Router({
       component: () => import("./components/DepartamentoList.vue")
     },
     {
-      path: "/edit_departamento/",
+      path: "/edit_departamento/:id",
       name: "edit_departamento",
       component: () => import("./components/EditDepartamento.vue")
     },

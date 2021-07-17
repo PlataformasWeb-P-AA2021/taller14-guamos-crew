@@ -125,7 +125,7 @@ export default {
                         this.departamento
                     )
                     .then(response => {
-                        this.$router.push('/departamentos');
+                        this.$router.push('/departamentoslist');
                     })
             });
         }
