@@ -25,7 +25,6 @@ export default new Router({
       component: () => import("./components/Index.vue")
     },
     {
-<<<<<<< HEAD
       path: "/createdept",
       name: "createdept",
       component: () => import("./components/CreateDepartamento.vue")
@@ -36,15 +35,14 @@ export default new Router({
       component: () => import("./components/DepartamentoList.vue")
     },
     {
-      path: "/edit_departamento",
+      path: "/edit_departamento/",
       name: "edit_departamento",
       component: () => import("./components/EditDepartamento.vue")
     },
-=======
+    {
       path: "/departamentoslist",
       name: "departamentoslist",
       component: () => import("./components/DepartamentoList.vue")
     },
->>>>>>> 525fab9f500ce8974e1d8c3cbd305a1dc782346f
   ]
 });

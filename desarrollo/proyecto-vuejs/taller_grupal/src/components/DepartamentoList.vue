@@ -21,11 +21,7 @@
                 </div>
             </div>
         </div>
-<<<<<<< HEAD
         <p  v-if="departamentos.length === 0"> Sin Departamentos</p>
-=======
-        <p  v-if="departamentos.length == 0"> Sin Departamentos</p>
->>>>>>> 525fab9f500ce8974e1d8c3cbd305a1dc782346f
     </div>
 </template>
 <script>
