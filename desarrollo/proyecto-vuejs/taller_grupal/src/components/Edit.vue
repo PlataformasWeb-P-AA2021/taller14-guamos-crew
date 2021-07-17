@@ -13,7 +13,7 @@
                     placeholder="Ingrese nombre"
                     :class="{'is-invalid': errors.has('edificio.nombre') && submitted}">
                 <div class="invalid-feedback">
-                    Please provide a valid name.
+                    Error en el ingreso de nombre
                 </div>
             </div>
             <div class="form-group">
@@ -29,7 +29,7 @@
                     :class="{'is-invalid': errors.has('edificio.direccion') && submitted}">
                   </textarea>
                 <div class="invalid-feedback">
-                    Please provide a valid description.
+                    Error en el ingreso de dirección
                 </div>
             </div>
             <div class="form-group">
@@ -45,23 +45,23 @@
                     :class="{'is-invalid': errors.has('edificio.ciudad') && submitted}">
                   </textarea>
                 <div class="invalid-feedback">
-                    Please provide a valid description.
+                    Error en el ingreso de ciudad
                 </div>
             </div>
             <div class="form-group">
-                <label for="direccion">Dirección</label>
+                <label for="tipo">tipo</label>
                 <textarea
                     name="direccion"
                     class="form-control"
-                    id="direccion"
+                    id="tipo"
                     v-validate="'required'"
-                    v-model="edificio.direccion"
+                    v-model="edificio.tipo"
                     cols="30"
                     rows="2"
-                    :class="{'is-invalid': errors.has('edificio.direccion') && submitted}">
+                    :class="{'is-invalid': errors.has('edificio.tipo') && submitted}">
                   </textarea>
                 <div class="invalid-feedback">
-                    Please provide a valid description.
+                    Error en el ingreso de tipo
                 </div>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
@@ -98,7 +98,7 @@ export default {
                 if (!result) {
                     return;
                 }
-                axios.put(`http://127.0.0.1:8000/api/edificio/${this.edificio.id}/`,
+                axios.put(`http://127.0.0.1:8000/api/edificios/${this.edificio.id}/`,
                         this.edificio
                     )
                     .then(response => {

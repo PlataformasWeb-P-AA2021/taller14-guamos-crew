@@ -9,7 +9,7 @@
                             <h5 class="card-text">Direccion: {{ edificio.direccion }}</h5>
                             <br>
                             <router-link :to="{name: 'edit', params: { id: edificio.id }}" class="btn btn-sm btn-primary">Editar</router-link>
-                            <button class="btn btn-danger btn-sm ml-1" v-on:click="deleteEdificio(esdificio)">Eliminar</button>
+                            <button class="btn btn-danger btn-sm ml-1" v-on:click="deleteEdificio(edificio)">Eliminar</button>
                         </div>
                     </div>
                     <div class="col-md-8">

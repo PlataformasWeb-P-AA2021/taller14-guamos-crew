@@ -94,7 +94,7 @@ export default {
                 }
                 console.log(this.correo)
                 axios.post('http://127.0.0.1:8000/api/edificios/',
-                        this.estudiante
+                        this.edificio
                     )
                     .then(response => {
                         this.$router.push('/');
