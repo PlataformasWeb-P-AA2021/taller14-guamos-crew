@@ -5,7 +5,7 @@
         <h2><router-link to="/index">Administración de Edificios</router-link></h2>
         <router-link to="/create" class="btn btn-sm btn-primary">+ Edificios</router-link>
         <br>
-        <router-link to="" class="btn btn-sm btn-primary">ver Departamentos</router-link>
+        <router-link to="/departamentoslist" class="btn btn-sm btn-primary">ver Departamentos</router-link>
         <br>
         <router-link to="" class="btn btn-sm btn-primary">+ Departamentos</router-link>
 

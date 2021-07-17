@@ -21,7 +21,7 @@
                 </div>
             </div>
         </div>
-        <p  v-if="telefonos.length == 0"> Sin Departamentos</p>
+        <p  v-if="departamentos.length == 0"> Sin Departamentos</p>
     </div>
 </template>
 <script>
